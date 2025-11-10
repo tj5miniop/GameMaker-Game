@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "OGun",
+  "name": "OEnemyWall",
   "spriteId": {
-    "name": "sGun",
-    "path": "sprites/sGun/sGun.yy",
+    "name": "SWallEnemy",
+    "path": "sprites/SWallEnemy/SWallEnemy.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -25,14 +25,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"OEnemy","path":"objects/OEnemy/OEnemy.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Gun",
-    "path": "folders/Objects/Gun.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }

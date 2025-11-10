@@ -2,6 +2,7 @@
 key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space);
+key_dash = keyboard_check_pressed(vk_lshift);
 
 if hp = 0
 {
@@ -25,6 +26,7 @@ if ((key_jump) and (jumpcount > 0))
 	jumpcount = jumpcount - 1;
 	audio_play_sound(Jump,1,0);
 }
+
 
 // reset jumpcount var if on ground
 if (place_meeting(x,y+1,OWall)) and (jumpcount <= 0)

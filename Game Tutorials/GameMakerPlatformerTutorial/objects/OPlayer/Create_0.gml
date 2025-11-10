@@ -14,5 +14,7 @@ hp_max = hp;
 jumpcount = 1;
 jumpcountref = jumpcount;
 
+
+
 // Collision vars (mainly for shotgun jump) 
 hor_col_dir = 0;

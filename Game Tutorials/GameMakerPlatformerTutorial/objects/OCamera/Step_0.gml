@@ -4,7 +4,7 @@
 if (instance_exists(follow))
 {
 	xTo = follow.x;
-	yTo = follow.y - 250;
+	yTo = follow.y - 100;
 }
 
 // Update object position

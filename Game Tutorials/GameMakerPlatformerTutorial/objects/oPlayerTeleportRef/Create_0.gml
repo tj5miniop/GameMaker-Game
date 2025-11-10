@@ -6,11 +6,13 @@ if instance_exists(OPlayer)
 	
 		x = other.x;
 		y = other.y;
+		instance_create_layer(x,y,"Gun",OGun);
 	}
 	
 }
 else
 {
-	instance_create_layer(x,y,layer,OPlayer)
+	instance_create_layer(x,y,"Gun",OGun);
+	instance_create_layer(x,y,layer,OPlayer);
 	GameInit()
 }
