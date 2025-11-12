@@ -13,6 +13,11 @@ if instance_exists(OPlayer)
 else
 {
 	instance_create_layer(x,y,"Gun",OGun);
-	instance_create_layer(x,y,layer,OPlayer);
+	instance_create_layer(x,y,"Player",OPlayer);
+	if not(instance_exists(OMusicPlayer))
+	{
+		instance_create_layer(x,y,layer,OMusicPlayer);	
+		
+	}
 	GameInit()
 }
